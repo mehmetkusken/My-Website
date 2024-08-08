@@ -10,6 +10,9 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem 'rubyzip', '2.3.2'
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
+
 
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
