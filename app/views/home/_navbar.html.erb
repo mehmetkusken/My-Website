@@ -4,14 +4,22 @@
 <div class="nav-links">
 
 <ul>
-
 <li><a href=""><%= link_to "HOME", root_path%>  </a></li>
 <li><a href=""><%= link_to "ABOUT", home_about_path%>  </a></li>
 <li><a href=""><%= link_to "SERVICE", home_service_path%>  </a></li>
 <li><a href="">DESIGN</a></li>
-<li><a href=""><%= link_to "CONTACT", home_contact_path%>  </a></li>
-<li><a href="">LOGIN</a></li>
-<li><a href="">SIGN UP</a></li>
+<li><a href=""><%= link_to "CONTACT",  home_contact_path %>  </a></li>
+<% if user_signed_in? %>
+
+
+
+<li><a href=""><%= link_to "EDIT PROFILE",  edit_user_registration_path %>  </a></li>
+<li><a href=""><%= link_to "LOGOUT",  destroy_user_session_path %>  </a></li>
+
+<% else%>
+<li><a href=""><%= link_to "LOGIN",  new_user_session_path %>  </a></li>
+<li><a href=""><%= link_to "SIGN UP",  new_user_registration_path %>  </a></li>
+<% end%>
 </ul>
 </div>
 
