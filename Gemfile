@@ -10,7 +10,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'rubyzip', '2.3.2'
 gem 'devise', '~> 4.9', '>= 4.9.3'
-gem "sqlite3", "~> 1.4"
+gem 'pg', '~> 1.5', '>= 1.5.7'
 gem 'bcrypt', '~> 3.1', '>= 3.1.20'
 gem 'rails_12factor', group: :production
 
