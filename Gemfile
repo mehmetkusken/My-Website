@@ -10,6 +10,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'rubyzip', '2.3.2'
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem "sqlite3", "~> 1.4"
 
 
 group :production do
