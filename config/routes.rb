@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
   #get 'home/index'
   root "home#index"
    get 'home/about'
    get 'home/contact'
    get 'home/service'
+   devise_for :users
+   devise_scope :user do  
+    get '/users/sign_out' => 'devise/sessions#destroy'     
+ end
    
 
 
