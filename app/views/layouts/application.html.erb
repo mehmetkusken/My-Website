@@ -11,6 +11,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
     <%= javascript_importmap_tags %>
     
   </head>
@@ -19,8 +20,8 @@
   
   
   <%= render "home/navbar" %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <%=render 'home/flash'%>
+
     <%= yield %>
   </body>
 </html>

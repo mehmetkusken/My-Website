@@ -1,4 +1,5 @@
 @import "font-awesome";
+@import "bootstrap";
 
 *{
     margin: 0;
@@ -424,4 +425,79 @@ nav img{
 .contact-col-form-control{
     text-align: center;
 }
+
+.contanierr{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background:#faf6ee;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardd{
+    
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+    background: #faf6ee;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+div.field {
+    margin: 10px;
+}
+
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 55px;
+    box-sizing: border-box;
+    
+
+
+    
+}
+
+#notice {
+    color: green; }
+  
+  .field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table; }
+  
+  #error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px 7px 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; }
+  
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff; }
+  
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+  
+  label {
+    display: block; }
+
 
