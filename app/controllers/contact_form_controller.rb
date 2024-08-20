@@ -8,6 +8,9 @@ class ContactFormController < ApplicationController
     
         NotifierMailer.simple_message(@name, @last_name, @email, @message).deliver_now
         flash[:success] = "Your message has been sent successfully."
-        redirect_to :root
+        redirect_to contact_form_new_path
     end
+
+
+   
 end
