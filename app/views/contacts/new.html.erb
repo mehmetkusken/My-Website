@@ -1,0 +1,60 @@
+<section class="header-contact">
+<h1>Contact Us</h1>
+</section>
+
+
+<section class="contact-us">
+<div class="row">
+
+<div class="contact-col">
+<div>
+<div class="fa">
+<%= image_tag "icons8-home-24(1).png" %>
+</div>
+<span>
+<h5>Address</h5>
+<p>Denver Downtown</p>
+</span>
+</div>
+<div>
+<div class="fa">
+<%= image_tag "icons8-email-24.png" %>
+</div>
+<span>
+<h5>Email</h5>
+<p>mehmetkusken@hotmail.com</p>
+</span>
+</div>
+</div>
+
+<div class="contact-col">
+<%= form_for @contact do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name, required: true %>
+    
+    <br>
+
+    <%= f.label :email%>
+    <%= f.email_field :email, required: true %>
+    <br>
+
+    <%= f.label :message%>
+    <%= f.text_area :message, as: :text %>
+    
+    <div class="hidden">
+    <%= f.label :nickname%>
+    <%= f.text_field :nickname, hint: "leave this field blank" %>
+    </div>
+    
+    <%= f.submit "Send Message", class: "button" %>
+    <% end %>
+</div>
+
+</div>
+</section>
+
+
+
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12270.7754825357!2d-105.00280435652859!3d39.74652689338447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d132e0074b%3A0xdc399a252684e4f8!2sDowntown%20Denver%2C%20Denver%2C%20Colorado!5e0!3m2!1str!2sus!4v1722730718765!5m2!1str!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

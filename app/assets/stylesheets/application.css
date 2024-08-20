@@ -498,6 +498,11 @@ div.field {
     list-style: square; }
   
   label {
-    display: block; }
+    display: block; 
+}
+
+.contact-col .hidden {
+    display: none;
+}
 
 

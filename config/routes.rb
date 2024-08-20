@@ -5,6 +5,10 @@ Rails.application.routes.draw do
    get 'home/about'
    get 'home/contact'
    get 'home/service'
+
+   get "contact_form/new"
+   resources :contact_form, only: %i[new create]
+
    devise_for :users
    devise_scope :user do  
     get '/users/sign_out' => 'devise/sessions#destroy'     

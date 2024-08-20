@@ -76,5 +76,16 @@ Rails.application.configure do
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
 
+  config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.smtp_settings = {
+  :user_name => '2726cd8fd74f24',
+  :password => 'b35a6a9da26b53',
+  :address => 'sandbox.smtp.mailtrap.io',
+  :host => 'sandbox.smtp.mailtrap.io',
+  :port => '2525',
+  :authentication => :login
+}
+
   config.action_mailer.default_url_options = { host: 'stark-reaches-11084-430d0fee8cd5.herokuapp.com'}
 end
