@@ -504,3 +504,11 @@ div.field {
 .contact-col .hidden {
     display: none;
 }
+
+
+
+.course-col li{
+    text-align: left;
+}
+
+
