@@ -37,17 +37,21 @@
     <%= f.label :email%>
     <%= f.email_field :email, required: true %>
     <br>
-
+    <div class="message">
     <%= f.label :message%>
-    <%= f.text_area :message, as: :text %>
-    
+    <%= f.text_area :message, :rows => "30x10" , as: :text %>
+    </div>
+
     <div class="hidden">
     <%= f.label :nickname%>
     <%= f.text_field :nickname, hint: "leave this field blank" %>
     </div>
-    
+
+
     <%= f.submit "Send Message", class: "button" %>
+
     <% end %>
+
 </div>
 
 </div>

@@ -511,4 +511,13 @@ div.field {
     text-align: left;
 }
 
+.testimonials-coll li{
+    text-align: center;
+    list-style-type: none;
+}
+.hide{
+    display: block;
+}
+
+
 
